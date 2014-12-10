@@ -4,6 +4,9 @@
 
 return unless node.serverdensity.enabled
 
+chef_gem 'rest_client'
+require 'rest_client'
+
 case node[:platform]
 
   when 'debian', 'ubuntu'
