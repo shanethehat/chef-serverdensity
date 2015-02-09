@@ -49,6 +49,10 @@ module ServerDensity
         self['_id']
       end
 
+      def tags
+        self['tags']
+      end
+
       def alerts
         @alerts ||= Alert.find(self)
       end
